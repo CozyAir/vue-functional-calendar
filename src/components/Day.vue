@@ -350,6 +350,9 @@ export default {
             } else if (day.date === range.end) {
               classes.push('vfc-end-marked')
             }
+            if (range.class !== null) {
+              classes.push(range.cssClass);
+            }
           })
         } else if (
           this.fConfigs.markedDateRange.start &&

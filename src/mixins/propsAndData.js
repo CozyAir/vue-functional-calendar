@@ -218,7 +218,8 @@ export const propsAndData = {
         markedDates: [],
         markedDateRange: {
           start: false,
-          end: false
+          end: false,
+          cssClass: null,
         },
 
         limits: false,
