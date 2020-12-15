@@ -344,14 +344,14 @@ export default {
                 this.helpCalendar.getDateFromFormat(day.date)
             ) {
               classes.push('vfc-marked')
+              if (range.class !== null) {
+                classes.push(range.cssClass);
+              }
             }
             if (day.date === range.start) {
               classes.push('vfc-start-marked')
             } else if (day.date === range.end) {
               classes.push('vfc-end-marked')
-            }
-            if (range.class !== null) {
-              classes.push(range.cssClass);
             }
           })
         } else if (
